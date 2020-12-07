@@ -1,0 +1,62 @@
+:root {
+    --background-main: #DAE0E6;
+    --background-primary: #FFFFFF;
+
+    --header-background-color: #f8f9fa;
+    --header-border-bottom-color: #FFFFFF;
+
+    --primary-btn-color: #FFFFFF;
+    --primary-btn-background-color: #0079D3;
+    --primary-btn-border-color: #0079D3;
+    --primary-btn-fill-color: #FFFFFF;
+
+    --secondary-btn-color: #0079D3;
+    --secondary-btn-background-color: transparent;
+    --secondary-btn-border-color: #0079D3;
+    --secondary-btn-fill-color: #0079D3;
+
+    --text-color: #1A1A1B;
+    
+  }
+html {
+    padding: 0;
+    height: 100%;
+}
+body {
+    
+    height: 100%;
+    background: var(--background-main);
+}
+
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
+input, textarea {
+    font-family: 'Noto Sans', sans-serif;
+}
+.login .sign-up  {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.btn-primary {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: var(--primary-btn-color);
+    background-color: var(--primary-btn-background-color);
+    border-color: var(--primary-btn-border-color);
+    fill: var(--primary-btn-fill-color);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+}
+.btn-secondary {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: var(--secondary-btn-color);
+    background-color: var(--secondary-btn-background-color);
+    border-color: var(--secondary-btn-border-color);
+    fill: var(--secondary-btn-fill-color);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    
+}

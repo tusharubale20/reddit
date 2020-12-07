@@ -1,0 +1,15 @@
+<!-- Section to Display Votes-->
+<div class="col-md-1">
+    <div class="d-flex flex-column votebox">
+        <div *ngIf="post">
+            <div class="p-2">
+                <fa-icon (click)=upVote() class="upvote" [icon]="faArrowUp" [style.color]="post.upVote ? 'green' : '' " ></fa-icon>
+            </div>
+            <div class="p-2 votecount">{{post.voteCount}}</div>
+            <div class="p-2">
+                <fa-icon (click)=downVote()  class="downvote" [icon]="faArrowDown" [style.color]="post.downVote ? 'red' : '' " >
+                </fa-icon>
+            </div>
+        </div>
+    </div>
+</div>

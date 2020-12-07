@@ -1,0 +1,5 @@
+.list-section {
+    background-color: var(--background-primary);
+    color: var(--text-color);
+    margin-top: 100px;
+}

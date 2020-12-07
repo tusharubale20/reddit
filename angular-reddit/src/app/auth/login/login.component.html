@@ -1,0 +1,60 @@
+<div class="login-section">
+    <div class="PageColumns">
+        <div class="PageColumn__left">
+            <div class="Art"></div>
+        </div>
+    
+        <div class="PageColumn__right">
+            <div class="ColumnContainer">
+                <h1 class="Title m-no-margin">{{ "LOGIN.LOGIN-HEADER" | translate}}</h1>
+                <form [formGroup]="loginForm" (ngSubmit) = "login()" >
+                    <div class="login-message" *ngIf='this.isError'>
+                        <p class="login-failed-text">{{ "LOGIN.LOGIN-FAILED-MESSAGE" | translate}}</p>   
+                    </div>
+                    <div class="login-message" [ngStyle]="{'color': 'blue'}" *ngIf="!this.isError &&this.registerSuccessMessage != undefined ">
+                        <p class="register-success-text">{{registerSuccessMessage}}</p>   
+                    </div>   
+                    
+                    <div class="form-group row mt-5">
+                        <div class="col-md-12">
+                            <input type="text" [formControlName]="'username'" class="form-control" 
+                                placeholder= '{{ "LOGIN.USERNAME" | translate}}' required autofocus>
+                            <span *ngIf="!loginForm.get('username').valid && loginForm.get('username').touched" >
+                                {{ "LOGIN.VALID-USERNAME-MESSAGE" | translate}}
+                            </span> 
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <input type="password" id="password" [formControlName]="'password'" class="form-control" name="password" 
+                                placeholder='{{ "LOGIN.PASSWORD" | translate}}' required autocomplete="off">
+                            <span *ngIf="!loginForm.get('password').valid && loginForm.get('password').touched" >
+                                {{ "LOGIN.VALID-PASSWORD-MESSAGE" | translate}}
+                            </span> 
+                        </div>
+                    </div>
+
+                    <span class="col-md-6 offset-md-4">
+                        <button type="submit" [disabled]="this.loginProcessing" class="btn btn-primary btn-lg btn-block loginBtn px-3 ">
+                            <span *ngIf="this.loginProcessing" >
+                                <span class="spinner-border text-primary mx-1" role="status"></span>
+                            </span>
+                            <span>
+                                {{ "LOGIN.LOGIN" | translate}}
+                            </span>
+                        </button>
+                        <br/>
+                        <span class="mx-auto mt-1">{{ "LOGIN.SIGN-UP-TEXT" | translate}}<a routerLink="/sign-up">{{ "SIGN-UP.SIGN-UP-HEADER" | translate}}</a></span>
+                    </span>
+                    
+                     
+                
+                </form>
+            
+            </div>
+            <div class="col-md-3"></div>
+
+        </div>
+    </div>
+</div>

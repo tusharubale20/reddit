@@ -1,0 +1,8 @@
+.subreddit-section {
+    margin-top: 100px;
+    background-color: var(--background-primary);
+    color: var(--text-color);
+}
+.errorMessage {
+    color: red;
+}

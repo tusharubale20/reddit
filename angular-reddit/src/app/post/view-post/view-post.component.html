@@ -1,0 +1,58 @@
+<app-header></app-header>
+
+<!-- Display Posts-->
+<div class="post-section container">
+    <div class="row">
+        <hr/>
+        <div class="col-md-9 col-sm-12 ">
+            <div class="row post">
+                <div class="col-2">
+                    <app-vote-button [post]="post$"></app-vote-button>
+                </div>
+                <div *ngIf="post$" class="col-10">
+                    <span>
+                        <span class="subreddit-text"><a class="post-url" href="">{{post$.subredditName}}</a></span>
+                        <span> . Posted 
+                            <span> {{post$.duration}} </span>
+                            by
+                        <a *ngIf="post$.username === null" class="username" href="">Anonymous</a>
+                        <a *ngIf="post$.username != null" class="username" href="">{{post$.username}}</a>
+                        </span>                        
+                    </span>
+                    <hr />
+                    <h3><div class="postname">{{post$.postName}}</div></h3>
+                    <div *ngIf="post$.url">
+                        <a class="posturl" href="{{post$.url}}">{{post$.url}}<fa-icon [icon]="faExternalLinkAlt" class="mx-2"></fa-icon></a>
+                    </div>
+                    <div>
+                        <p class="post-text" [innerHtml]="post$.description"></p>
+                    </div>
+                    <div class="post-comment">
+                        <form [formGroup]="commentForm" (ngSubmit)="postComment()" ngNativeValidate>
+                          <div class="form-group">
+                            <textarea class="form-control" [formControlName]="'text'" placeholder="Comment..." required></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary float-right">{{ "POST-TILE.COMMENT" | translate }}</button>
+                        </form>
+                    </div>
+                    <div style="margin-top: 60px; margin-bottom: 20px;">
+                        <div *ngFor="let comment of comments">
+                            <div class="comment mb-3">
+                                <div>
+                                    {{comment.userName}} · {{comment.duration}}
+                                </div>
+                                <div class="comment-text">{{comment.text}}</div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-12 ">
+            <app-subreddit-side-bar></app-subreddit-side-bar>
+            <app-side-bar></app-side-bar>
+        </div>
+    </div>
+</div>

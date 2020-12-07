@@ -1,0 +1,24 @@
+<div class="sidebar-view-subreddit my-3 pt-2 px-1">
+    
+    <div class="subreddit-sidebar-image mr-2" style="background-image: url(&quot;https://www.redditstatic.com/desktop2x/img/leaderboard/banner-background.png&quot;);">
+        <h2 class="community">
+            {{ "SUBREDDIT-SIDE-BAR.COMMUNITIES" | translate }}
+        </h2>
+    </div>
+    <hr />
+    <span *ngFor="let subreddit of subreddits$">
+        <span>
+            <a href="/view-subreddit/{{subreddit.id}}" class="subreddit-text mx-2">
+                {{subreddit.id}}
+                <span class="pl-2   ">
+                    <img src="https://b.thumbs.redditmedia.com/voAwqXNBDO4JwIODmO4HXXkUJbnVo_mL_bENHeagDNo.png" class="subredditIcon">
+                    r/{{subreddit.name}}
+                </span>
+            </a>
+        </span>
+        <hr/>
+    </span>
+    <div class="mx-1" *ngIf="displayViewAll">
+        <a class="btn btn-primary btn-block btnViewAll mb-2" routerLink="/list-subreddits">{{ "SUBREDDIT-SIDE-BAR.VIEW-ALL" | translate }}</a>
+    </div>
+</div>

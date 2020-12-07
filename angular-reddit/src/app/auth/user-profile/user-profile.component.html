@@ -1,0 +1,42 @@
+<app-header></app-header>
+<div class="user-profile-section container">
+    <button class="btn btn-primary mx-5 my-5" (click)="subscribeToNotifications()">
+      Subscribe to notifications
+    </button>
+    <div>
+      Welcome <b>{{name}}</b>.<br /> You have posted <b>{{postLength}}</b> time(s) and commented
+      <b>{{commentLength}}</b> time(s).
+      <div>You can check your post and comment history below.</div>
+    </div>
+    <hr />
+    
+    <div *ngIf="!postDataReady">
+      <div class="spinner-border text-primary mx-5 my-5" role="status">
+        <span class="sr-only">Fetching data...</span>
+      </div>
+    </div>
+    <div *ngIf="postLength === 0">
+      <b>Your Posts:</b>
+    </div>
+    <app-post-tile [posts]="posts"></app-post-tile>
+    <hr />
+    
+    <div *ngIf="!commentDataReady">
+      <div class="spinner-border text-primary mx-5 my-5" role="status">
+        <span class="sr-only">Fetching data...</span>
+      </div>
+    </div>
+    <div *ngIf="commentLength === 0">
+      <b>Your Comments:</b>
+    </div>
+    <div style="margin-top: 20px; margin-bottom: 20px;">
+      <div *ngFor="let comment of comments">
+          <div class="comment mb-3">
+              <div>
+                  {{comment.userName}} · {{comment.duration}}
+              </div>
+              <div class="comment-text">{{comment.text}}</div>    
+          </div>
+      </div>
+    </div>
+  </div>

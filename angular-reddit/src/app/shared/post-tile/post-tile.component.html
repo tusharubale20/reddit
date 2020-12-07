@@ -1,0 +1,35 @@
+<!-- Display Posts-->
+<div class="row post" *ngFor="let post of posts">
+    <div class="col-2"><app-vote-button [post]="post"></app-vote-button></div>
+    <!-- Section to Display Post Information-->
+    <div class="col-10">
+        <span class="subreddit-info">
+            <img style="background-color:#646D73" alt="Subreddit Icon" role="presentation" src="https://styles.redditmedia.com/t5_2qh1i/styles/communityIcon_tijjpyw1qe201.png" class="subreddit-image">
+            <span class="subreddit-text"><a class="posturl" routerLink="">{{post.subredditName}}</a></span>
+            <span class="username"> · Posted by <a class="username" routerLink="/user/{{post.username}}">{{post.username}}</a></span>
+            <span class="username"> · {{post.duration}}</span>
+        </span>
+        <div >
+            <h3><div class="postname">{{post.postName}}</div></h3>
+            <div *ngIf="post.url"><a class="posturl" href="{{post.url}}">{{post.url}}<fa-icon [icon]="faExternalLinkAlt" class="mx-2"></fa-icon></a></div>
+        </div>
+        <div>
+            <p class="post-text" [innerHtml]="post.description"></p>
+        </div>
+        <span>
+            <a class="btnCommments" (click)="viewPost(post.id)" role="button">
+                <fa-icon [icon]="faCommentAlt" class="mr-2"></fa-icon>
+                <span class="comments" *ngIf="post.commentCount>1 else commentBlock">
+                    {{post.commentCount}} {{ "POST-TILE.COMMENTS" | translate}}
+                </span>
+                <ng-template #commentBlock>
+                    <span class="comments">{{post.commentCount}} {{ "POST-TILE.COMMENT" | translate}}</span>
+                </ng-template>
+            </a>
+            &nbsp;
+            <button class="btn btn-primary" (click)="viewPost(post.id)" >
+                {{ "POST-TILE.READ-POST" | translate }}
+            </button>
+        </span>
+    </div>
+</div>

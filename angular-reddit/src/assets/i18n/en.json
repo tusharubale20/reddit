@@ -1,0 +1,46 @@
+{
+    "HEADER": {
+        "LANGUAGE": "Language",
+        "ENGLISH": "ENGLISH",
+        "JAPANESE": "日本語",
+        "LOGIN": "LOGIN",
+        "SIGN-UP": "SIGN UP",
+        "LOGOUT": "LOGOUT",
+        "MY-PROFILE": "My Profile"
+    },
+    "LOGIN": {
+        "LOGIN-HEADER": "Login",
+        "USERNAME": "USER NAME",
+        "PASSWORD": "PASSWORD",
+        "LOGIN": "LOGIN",
+        "VALID-USERNAME-MESSAGE": "Please provide a valid username.",
+        "VALID-PASSWORD-MESSAGE": "Password cannot be empty.",
+        "LOGIN-FAILED-MESSAGE": "Login Failed. Please check your credentials and try again.",
+        "SIGN-UP-TEXT": "New to Reddit? "
+    },
+    "SIGN-UP": {
+        "SIGN-UP-HEADER": "Sign up",
+        "EMAIL": "EMAIL",
+        "USERNAME": "USER NAME",
+        "PASSWORD": "PASSWORD",
+        "SIGN-UP": "SIGN UP",
+        "VALID-EMAIL-MESSAGE": "Please provide a valid username.",
+        "VALID-USERNAME-MESSAGE": "Please provide a valid username.",
+        "VALID-PASSWORD-MESSAGE": "Password cannot be empty.",
+        "LOGIN-TEXT": "Already a redditor? "
+    },
+    "POST-TILE": {
+        "COMMENTS": "COMMENTS",
+        "COMMENT": "COMMENT",
+        "READ-POST": "READ POST"
+    },
+    "SIDEBAR": {
+        "WELCOME-TEXT": "Your personal Reddit frontpage. Come here to check in with your favorite communities.",
+        "CREATE-POST": "CREATE POST",
+        "CREATE-COMMUNITY": "CREATE COMMUNITY"
+    },
+    "SUBREDDIT-SIDE-BAR": {
+        "COMMUNITIES": "Communities",
+        "VIEW-ALL": "VIEW ALL"
+    }
+}

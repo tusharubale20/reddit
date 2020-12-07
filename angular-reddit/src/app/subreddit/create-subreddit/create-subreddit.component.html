@@ -1,0 +1,36 @@
+<app-header></app-header>
+<div class="subreddit-section container">
+    <div class="row">
+      <div class="create-subreddit-container my-2 mx-3">
+        <form class="post-form" [formGroup]="subredditForm" (ngSubmit)="createSubreddit()">
+          <div class="form-group">
+            <div class="create-subreddit-heading">Create Subreddit</div>
+            <hr />
+            <input type="text" [formControlName]="'name'" class="form-control" style="margin-top: 5px"
+              placeholder="Title">
+            <textarea type="text" [formControlName]="'description'" style="width: 100%; margin-top: 5px"
+              placeholder="Description"></textarea>
+            <div>
+              <div>
+                <button class="btn btn-primary btn-block mt-3">Create</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-3">
+        <div class="sidebar my-2">
+          <h5 class="guidelines">Posting to Reddit</h5>
+          <hr />
+          <ul>
+            <li>Remember the human</li>
+            <hr />
+            <li>Behave like you would in real life</li>
+            <hr />
+            <li>Don't spam</li>
+            <hr />
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>

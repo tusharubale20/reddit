@@ -1,0 +1,15 @@
+.user-profile-section {
+    margin-top: 100px;
+    background-color: var(--background-primary);
+    color: var(--text-color);
+    
+}
+.comment{    
+    overflow: hidden;  
+    background-color: var(--background-primary);
+    color: #878A8C;
+    position: relative;
+}
+.comment-text {
+  color: var(--text-color);
+}

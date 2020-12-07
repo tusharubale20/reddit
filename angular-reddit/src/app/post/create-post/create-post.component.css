@@ -1,0 +1,35 @@
+.post-section {
+    margin-top: 100px;
+}
+
+.post-form {
+  margin: 2px;
+}
+
+.comment-notification {
+  margin-top: 5px;
+}
+
+.create-post-container {
+  margin-top: 10px;
+  --post-line-color: #ccc;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  background-color: var(--background-primary);
+  color: var(--text-color);
+  position: relative;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+
+.create-post-heading {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: var(--text-color);
+  -ms-flex: 1;
+  flex: 1;
+}

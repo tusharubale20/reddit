@@ -1,0 +1,35 @@
+<app-header></app-header>
+<div class="subreddit-section container"> 
+    <div class="errorMessage" *ngIf="errorMessage">errorMessage</div>
+    
+    <div *ngIf="!postDataReady else postData">
+      <div class="spinner-border text-primary mx-5 my-5" role="status">
+        <span class="sr-only">Fetching posts...</span>
+      </div>
+    </div>
+    <ng-template #postData>
+        
+        <div>
+            <h2 *ngIf="!noPostsForSubreddit && subredditName">{{this.subredditName}}</h2>
+            <hr />
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-6 col-sm-12">
+                    <div *ngIf="noPostsForSubreddit; else postDataForSubredditPresent">
+                        No posts posted in this community yet. You can be the first.
+                    </div>
+                    <ng-template #postDataForSubredditPresent>
+                        <b>Posts</b>
+                        <app-post-tile [posts]="posts$"></app-post-tile>
+                    </ng-template>
+                </div>
+                <div class="col-md-4 col-sm-12 ">
+                    <app-subreddit-side-bar></app-subreddit-side-bar>
+                    <app-side-bar></app-side-bar>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+
+    </ng-template>
+</div>

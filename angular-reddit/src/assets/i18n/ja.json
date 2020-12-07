@@ -1,0 +1,46 @@
+{
+    "HEADER": {
+        "LANGUAGE": "言語",
+        "ENGLISH": "ENGLISH",
+        "JAPANESE": "日本語",
+        "LOGIN": "ログイン",
+        "SIGN-UP": "新規登録",
+        "LOGOUT": "ログアウト",
+        "MY-PROFILE": "プロファイル"
+    },
+    "LOGIN": {
+        "LOGIN-HEADER": "ログイン",
+        "USERNAME": "ユーザー名前",
+        "PASSWORD": "パスワード",
+        "LOGIN": "ログイン",
+        "VALID-USERNAME-MESSAGE": "有効なユーザー名前をお願い致します。",
+        "VALID-PASSWORD-MESSAGE": "パスワードをお願い致します。",
+        "LOGIN-FAILED-MESSAGE": "ログインに失敗しました。認証情報を確認して、もう一度お試しください。",
+        "SIGN-UP-TEXT": "初めてご利用ですか？"
+    },
+    "SIGN-UP": {
+        "SIGN-UP-HEADER": "ユーザー登録",
+        "EMAIL": "Eメールアドレス",
+        "USERNAME": "ユーザー名前",
+        "PASSWORD": "パスワード",
+        "SIGN-UP": "ユーザー登録",
+        "VALID-EMAIL-MESSAGE": "有効なメールアドレスをお願い致します。",
+        "VALID-USERNAME-MESSAGE": "有効なユーザー名前をお願い致します。",
+        "VALID-PASSWORD-MESSAGE": "パスワードをお願い致します。",
+        "LOGIN-TEXT": "すでにアカウントが持ってます？ "
+    },
+    "POST-TILE": {
+        "COMMENTS": "コメント",
+        "COMMENT": "コメント",
+        "READ-POST": "ポストを読む"
+    },
+    "SIDEBAR": {
+        "WELCOME-TEXT": "レディットへようこそ. 人気があるコミュニティをチェックしてください。新しいを作成するのも可能です。",
+        "CREATE-POST": "ポストを作成",
+        "CREATE-COMMUNITY": "コミュニティを作成"
+    },
+    "SUBREDDIT-SIDE-BAR": {
+        "COMMUNITIES": "コミュニティ",
+        "VIEW-ALL": "もっと見る"
+    }
+}

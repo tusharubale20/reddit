@@ -1,0 +1,194 @@
+header{
+    border-radius: 1px solid;
+}
+.navbar {
+    background-color: var(--header-background-color);
+    border:1px solid var(--header-border-bottom-color);
+}
+.dropdownMenu {
+    background-color: var(--header-background-color);
+    color: var(--text-color);
+}
+.reddit-icon-svg{
+    height: 50px;
+    padding: 8px 8px 8px 0;
+    width: 50px;
+}
+
+.reddit-text{        
+    font-weight: 700;
+    height: 50px;
+    width: 50px;    
+}
+.logo{
+    text-decoration: none;
+}
+.reddit-icon-svg circle{
+    fill: #000;
+}
+.reddit-logo{
+    height:50px;
+    width:50px;
+}
+.reddit-logo g path{
+    fill: #1c1c1c;
+}
+
+.header-buttons {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.userdetails{    
+    background-color: var(--background-primary);
+    color:var(--text-color);
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    
+}
+
+.userdetails:hover{
+    border: 1px solid transparent;
+}
+
+.dropdown-item{
+    background-color: #f8f9fa;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dropdown-item:hover{
+    background-color: #0079D3;
+}
+
+.dropdown-menu{
+    background-color: #f8f9fa;
+}
+
+.account-icon{
+    border-radius: 4px;
+    float: left;
+    margin-right: 5px;
+    max-height: 24px;
+    max-width: 24px;
+}
+
+.profile{
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 2px 0;
+    min-height: 32px;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    text-align: left;
+    width: 100%;
+}
+
+.profile-image {
+    height: 30px; 
+    width: 30px;
+    fill: rgb(255, 255, 255);
+    background: rgb(215, 223, 226);
+}
+.username {
+    color: var(--text-color);
+}
+.dropdown-profile-image {
+    height: 20px;
+    left: 16px;
+    width: 20px;
+    fill:#878A8C;
+    top: 10px;
+}
+.user-icon {
+    color:#878A8C;
+    fill:#878A8C;
+    height: 24px;
+    width: 24px;
+}
+.nightMode-icon {
+    color:#878A8C;
+    fill:#878A8C;
+    margin-right:5px;
+    top: 15px;
+    font-size: 26px;
+}
+.languageMenu {
+    text-decoration: none;
+    color: #878A8C;
+    fill: #878A8C;
+}
+
+/*slider*/
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

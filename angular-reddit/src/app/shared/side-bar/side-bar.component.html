@@ -1,0 +1,18 @@
+<div class="sidebar">
+    <div class="sidebar-image" style="background-image:url(https://www.redditstatic.com/desktop2x/img/id-cards/home-banner@2x.png)"></div>
+    <div class="sidebar-home-container">
+        <div class="sidebar-home-container-reddit-image" style="background:url('https://www.redditstatic.com/desktop2x/img/id-cards/snoo-home@2x.png');background-size:40px 68px;height:68px;width:40px"></div>
+        <div class="sidebar-home-container-home-text">
+            Home
+        </div>
+    </div>
+    <div style="text-align: center; font-size: 1em">
+        {{ "SIDEBAR.WELCOME-TEXT" | translate}}</div>
+    <div style="text-align: center">
+        <button class="btn btn-primary btn-block " (click)="goToCreatePost()">{{ "SIDEBAR.CREATE-POST" | translate}}</button>
+    </div>
+   
+    <div style="text-align: center" class="mt-2">
+        <button class="btn btn-secondary btn-block " (click)="goToCreateSubreddit()">{{ "SIDEBAR.CREATE-COMMUNITY" | translate}}</button>
+    </div>
+</div>

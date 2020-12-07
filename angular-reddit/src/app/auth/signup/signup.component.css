@@ -1,0 +1,60 @@
+.signUp-section {
+    background-color: white;
+}
+.PageColumns {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow-x: hidden;
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+.PageColumn__left {
+    width: 156px;
+}
+
+.PageColumn__right {
+    width: 100%;
+}
+.ColumnContainer {
+    padding: 24px;
+    min-width: 260px;
+    max-width: 440px;
+}
+.Art {
+    background-image: url(https://www.redditstatic.com/accountmanager/bbb584033aa89e39bad69436c504c9bd.png);
+    /*background-image: url(https://www.redditstatic.com/desktop2x/img/partner-connection.png);*/
+    height: 100vh;
+    min-height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    box-sizing: border-box;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.Title.m-no-margin {
+    margin: 0;
+}
+
+.form-group {
+    opacity: 1;
+    transition: opacity .25s ease-in;
+}
+.textInput {
+    transition: all 0.2s ease-in-out 0s;
+}
+.signupBtn {
+    background-color: #007bff;
+    border-color: #007bff;
+}
